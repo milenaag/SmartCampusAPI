@@ -49,3 +49,8 @@ The API is structured around three core resources:
 ### 1. Get API discovery endpoint
 ```bash
 curl -X GET http://localhost:8080/AirlineAPII/api/v1/
+
+## project structure
+the main project files are located inside "airlineapi3' folder 
+
+
