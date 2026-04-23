@@ -125,4 +125,16 @@ curl -X GET http://localhost:8080/AirlineAPII/api/v1/
 ## project structure
 the main project files are located inside "airlineapi3' folder 
 
+### Create a Room
+curl -X POST http://localhost:8080/AirlineAPII/api/v1/rooms \
+-H "Content-Type: application/json" \
+-d '{"id":"LIB-301","name":"Library","capacity":40}'
+
+### Get all Rooms
+curl -X GET http://localhost:8080/AirlineAPII/api/v1/rooms
+
+### Create a Sensor
+curl -X POST http://localhost:8080/AirlineAPII/api/v1/sensors \
+-H "Content-Type: application/json" \
+-d '{"id":"TEMP-001","type":"Temperature","status":"ACTIVE","currentValue":21.5,"roomId":"LIB-301"}'
 
