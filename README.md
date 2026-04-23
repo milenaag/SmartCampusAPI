@@ -79,7 +79,7 @@ curl -X POST http://localhost:8080/AirlineAPII/api/v1/sensors \
 curl -X GET "http://localhost:8080/AirlineAPII/api/v1/sensors?type=Temperature"
 ```
 
----
+
 
 ## Design Decisions
 
@@ -95,7 +95,6 @@ The sub-resource locator pattern is used for sensor readings, allowing nested ro
 
 This keeps the design modular and easier to maintain.
 
----
 
 ## Exception Handling
 
@@ -108,7 +107,7 @@ Custom exceptions are used to handle different error cases:
 
 Exception mappers convert these exceptions into structured JSON responses with appropriate HTTP status codes.
 
----
+
 
 ## Notes
 
